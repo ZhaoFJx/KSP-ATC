@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using System.Text;
-
 using KSP;
 using UnityEngine;
+using Random
 
-//Complete Lib Import
+//Completed Import
 
 public enum ATCclass {
 	Tower,
@@ -85,6 +85,7 @@ namespace ATC
 //			space_center.name = "KSC";
 //			space_center.frequency = 117.9f;
 //			space_center.type = ATCclass.Space_Center;
+//			Consider make a specific list of every tower. Or let player customs them ingame.
 		}
 		public double distance() {
 			return Vector3.Distance (FlightGlobals.getMainBody ().GetRelSurfacePosition (latitude, longitude, 0),
